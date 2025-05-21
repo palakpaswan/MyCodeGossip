@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form 1</title>
+    <link rel="icon" type="image/x-icon"  href="logo.jpg">
+    <style>
+     *{color:#000000}
+     body{background-color:#f4f4e0}
+     
+     .class1{
+       color:white;
+       text-align:center;
+       font-family:Times New Roman;  
+       background-color:#42423d;
+       font-size:50px;
+       }
+    
+      p {
+      text-indent:70px;   
+      font-family:sans-serif;
+      word-spacing:5px;
+      font-size:20px;
+      padding:10px;
+      }
+   
+  
+    </style>
+</head>
+<body style="border:5px outset #21211e;">
+<h1 class="class1">Forms in HTML</h1>    
+<br>
+<h2 align="left" style="margin-left:30px;font-size:30px; color:#22221f">HTML | Design Form</h2>
+<p>
+What is HTML Form : 
+HTML Form is a document that stores information of a user on a web server using interactive controls. An HTML form contains different kinds of information such as username, password, contact number, email id, etc. 
+The elements used in an HTML form are the check box, input box, radio buttons, submit buttons, etc. Using these elements the information of a user is submitted on a web server.
+The form tag is used to create an HTML form.  
+</p>    
+<h2 align="left" style="margin-left:30px;font-size:30px;color:#22221f">Example of an HTML Form : </h2>    
+<br>
+<br>    
+<div style="margin-left:20px;margin-right:20px;border:2px solid black;padding:20px">
+<h1 style="text-align:center"><u>Admission form</u></u></h1>
+<pre>
+    
+    
+        <b>    Sir,
+                 
+            We ________ and ________ wish to apply for the admission of our child in your institution.</b>              
+<table border="7" align="center" bgcolor="#ffffea" bordercolor="#2f2f2b"<p></p>
+<form name="frm" method="post" enctype="text/plain" action="mailto: palakpaswan456@gmail" >
+<tr bgcolor="#ccccbb">
+<th><b><i><u>APPLICATION FOR ADMISSION</u></i></b></th></tr>
+
+
+<tr align="center" >
+    
+<td>
+ Personal details of student
+ <hr color="#2f2f2b"> <b>   
+First name : <input type="text" name="fname" maxlength="15" size="10" >     Middle name : <input type="text" name="middlename" maxlength="15" size="10">     Last name : <input type="text" name="lastname" maxlength="15" size="10"> </b>   <img src="pic.jpg" height="73" width="73">  </td>
+</tr>
+<tr>
+<td><b>Name of the school     :   <input type="text" name="schoolname" maxlength="30" size="19"></b></td>   
+</tr>
+
+<tr>
+<td>
+<b>Father Name            :   <input type="text" name="fathername" maxlength="15" size="19">        Occupation :  <input type="text" name="occupation" maxlength="15" size="19"></b>  
+
+<b>Mother Name            :   <input type="text" name="mothername" maxlength="15" size="19">        Occupation :  <input type="text" name="occupation" maxlength="15" size="19"></b> 
+
+</td>
+</tr>
+<tr>
+<td><b>      Date of Birth 
+    <input type ="date" name="dob">    Birth Place : <input type="text" name="birthplace" maxlength="15" size="10">    DOB(in words) : <input type="text" name="dobinwords" maxlength="40" size="16">  </td> 
+</tr>
+<tr>
+<td><b>Gender                 :   <input type="radio" name="r1" value="male">Male   <input type="radio" name="r1" value="female">Female   <input type="radio" name="r1" value="trans">Trans</b></td>
+</tr>
+<tr>
+<td><b>Language Known         :   <input type="checkbox" name="Hindi" value="H"> Hindi  <input type="checkbox" name="English" value="E"> English <input type="checkbox" name="Marathi" value="M"> Marathi <input type="checkbox" name="Other" value="O"> Other
+</b></td>
+</tr>
+<tr>
+<td><b>Religion : <input type="text" name="religion" maxlength="15" size="10">    Caste : <input type="text" name="caste" maxlength="15" size="10">    Mother Tongue : <input type="text" name="mothertongue" maxlength="15" size="10"> </b></td>
+</tr>
+<tr>
+<td><b>Board    : <input type="radio" name="board" value="S">SSC   <input type="radio" name="board" value="C">CBSE  <input type="radio" name="board" value="I">ICSE  <input type="radio" name="board" value="B">IB </b></td>
+</tr>
+<tr>  
+<td><b>Nationality    :     <input type="text" name="nationality" maxlength="15" size="12">    Select state :    <select name="state">
+    <option value="M">Maharashtra</option>
+    <option value="UP" selected>Uttar Pradesh </option>
+    <option value="AP">Andhra Pradesh</option>
+    <option value="AR">Arunachal Pradesh</option>
+    <option value="AS">Assam</option>
+    <option value="BR">Bihar</option>
+    <option value="CH">Chandigarh</option>
+    <option value="UK">Uttrakhand</option>
+    </select></b></td>
+</tr>
+<tr>
+<td><b>Examination Passed : <input type="text" name="exampass" maxlength="15" size="20" required>   Percentage Obtained  : <input type="number" name="percentage" size="2" required>   </b></td>
+</tr>
+<tr>
+<td><b>Select Stream     : <input type="radio" name="stream" value="Sci">Science   <input type="radio" name="stream" value="Com">Commerce   <input type="radio" name="stream" value="Art">Arts 
+</tr>
+<tr>
+<td><b>Hobbies           : <input type="checkbox" name="h1" value="Re"> Reading  <input type="checkbox" name="h2" value="D"> Dancing <input type="checkbox" name="h3" value="S"> Singing <input type="checkbox" name="h4" value="Oth"> Other
+</b></td>
+</tr>
+<tr>
+<td><b>Residential Address : <textarea cols="50" rows="1" placeholder=" Please enter your current address here"></textarea></b></td>
+</tr>
+<tr>
+<td><b>Phone No.  :   <input type="tel" name="phone" pattern="[0-9]{2}-[0-9]{10}" placeholder="91-885863XXXX">        Email ID  :  <input type="email" name="email"> </b></td>
+</tr>
+<tr>
+<th><input type="checkbox" name="save" checked> Save this application form.</th>
+</tr>
+<tr>
+<td>
+<b>
+  Press the submit button ===> <input type="submit" name="submit">                                Press the cancel button ===> <input type="reset" name="cancel" value="Cancel">
+</b>
+</td>
+</tr>
+</form>
+</table>
+</pre>
+</div>
+<br>
+<h2 align="left" style="margin-left:30px;font-size:30px; color:#22221f">Hyperlinks in HTML :</h2>
+<p>
+In computing, a hyperlink, or simply a link, is a digital reference to data that the user can follow or be guided by clicking or tapping<sup>[1]</sup>. A hyperlink points to a whole document or to a specific element within a document. Hypertext is text with hyperlinks. The text that is linked from is known as anchor text. A software system that is used for viewing and creating hypertext is a hypertext system, and to create a hyperlink is to hyperlink (or simply to link). A user following hyperlinks is said to navigate or browse the hypertext.
+</p>
+<h2 align="left" style="margin-left:30px;font-size:30px;color:#22221f">Example of an Hyperlink : </h2>    
+<br>
+<br>    
+<div style="border:2px solid black;padding:20px;text-align:left;margin-left:40px;margin-right:40px;font-size:20px;padding-left:1px">
+<p><i>      To Register yourself for COVID-Vaccine ===><a href="form.html"> Click here</a></i></p>
+</div>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create account</title>
+    <link rel="icon" type="image/x-icon"  href="logo.jpg">
+
+<script type="text/javascript">
+function validate()
+{
+
+if(document.loginfrm.email.value == "")
+{
+alert("Please enter your email!");
+document.loginfrm.email.focus();
+return false;
+}
+
+if(document.loginfrm.password.value == "")
+{
+alert("Please create your password!");
+document.loginfrm.password.focus();
+return false;  
+}
+
+if(document.loginfrm.password.value != document.loginfrm.password1.value )
+{
+alert("Password doesn't matched!");
+document.loginfrm.password1.focus();
+return false;  
+}
+
+if(document.loginfrm.create.value == "Create Account")
+{
+alert("Hurray! Your account is created");
+window.location.href="index.html";
+return false;  
+}  
+return(true);
+}
+</script>   
+    
+</head>
+<body style="border:2px dashed #0b5c81;margin-top:10px; padding-bottom:95%;margin-bottom:10px">
+<pre>
+<br>
+<img src="logo.jpg" height="5%" width="10%" align="center" style="float:left;border:10px solid #0e76a5 "><h1 style="color:white;text-align:center;font-family:Times New Roman; background-color:#0e76a5;font-size:50px">My Code Gossip
+</h1>
+
+<form name="loginfrm" method="post" enctype="text/plain" onsubmit="return(validate());">
+        
+<h1 style="color:#0b5d83;text-align:center;font-family:Serif;font-size:46px"><u>Create account</u>👇</h1><div style="border:1px solid black;padding-left:40px;padding-right: 20px;text-align:left;margin-top:10%;margin-left:220px;margin-right:220px;padding-top:5%;padding-bottom:8%">    
+
+
+<b style="font-size:30px">Email :</b>
+
+<input type="email" name="email" size="30" maxlength="30"  style="width:90%;font-weight:bold;padding:10px">
+
+
+<b style="font-size:30px">Create Password :</b> 
+ 
+<input type="password" name="password" maxlength="10" size="30"  style="width:90%;font-weight:bold;padding:10px"> 
+
+
+<b style="font-size:30px">Confirm Password :</b> 
+
+<input type="password" name="password1" maxlength="10" size="30"  style="width:90%;font-weight:bold;padding:10px">                     
+
+
+
+
+
+      
+<input type="submit" name="create" value="Create Account"  style="width:95%;font-weight:bold;padding:12px;font-size:33px;text-align:center">
+  
+           
+<b style="font-size:20px;text-align:center" > Have an account already? <a href="login.html" style ="color:#006cff;">Sign in</a> </b>     
+                              
+</form> 
+</div>
+
+
+</pre>
+</body>
+</html>

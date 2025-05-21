@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign in Page</title>
+    <link rel="icon" type="image/x-icon"  href="logo.jpg">
+<script type="text/javascript">
+function handleSubmit(event)
+{
+
+if(document.loginfrm.email.value == "")
+{
+alert("Please provide your email!");
+document.loginfrm.email.focus();
+return false;
+}
+
+if(document.loginfrm.password.value == "")
+{
+alert("Please provide your password!");
+document.loginfrm.password.focus();
+return false;  
+}
+
+if(document.loginfrm.submit.value == "Sign in")
+{
+alert("Thank you for signing up !!");
+window.location.href="index.html";
+return false;  
+}  
+
+return(true);
+}
+
+function handleButtonClick(event)
+{    
+if(document.loginfrm.create_account.value == "Create an Account")
+{
+window.location.href="create_account.html"; 
+}
+}
+
+window.onload = function() {
+            // Attach the onsubmit event to the form
+            document.getElementById('login').onsubmit = handleSubmit;
+            
+            // Attach the onclick event to the button
+            document.getElementById('b1').onclick = handleButtonClick;
+        }
+</script>    
+</head>
+<body style="border:2px dashed #0b5c81;margin-top:20px; padding-bottom:80px">
+<pre>
+<br>
+<br>
+<img src="logo.jpg" height="5%" width="10%" align="center" style="float:left;border:10px solid #0e76a5 "><h1 style="color:white; ;text-align:center;font-family:Times New Roman; background-color:#0e76a5;font-size:50px">My Code Gossip
+</h1>
+
+
+        
+<h1 style="color:#0b5d83;text-align:center;font-family:Serif;font-size:50px;"><u>Sign Up here</u>👇</h1><div style="border:1px solid black;padding:20px;text-align:center;margin-top:10%;margin-left:50px;margin-right:50px">    
+<h1>Have an account already ? Sign in</h1>   
+<form name="loginfrm" id="login">
+<b style="font-size:20px">Email :</b>        <input type="email" name="email" size="30" placeholder="Eg :   mycodegossip@gmail.com" maxlength="30"  style="width:25%;font-weight:bold;padding:10px">
+
+<b style="font-size:20px">Password :</b>    <input type="password" name="password" maxlength="10" size="30"  style="width:25%;font-weight:bold;padding:10px"> 
+
+                 <u style="color:red"><b>Forgot your password?</b></u>       
+
+      
+                   <input type="submit" name="submit" value="Sign in"  style="background-color:#1085bb;width:26%;font-weight:bold;color:white;padding:10px;font-size:20px">
+           
+                   <input type="button" id="b1" name="create_account" value="Create an Account" style="width:26%;font-weight:bold;padding:10px;font-size:20px">
+                                                      
+</form> 
+</div>
+</pre>
+<br>
+<br>
+<center><button onclick="history.back()"style="padding:10px"><u style="font-size:20px;font-weight:bold;font-style:italic;color:#063449">Go Back</u></button></center>
+</body>
+</html>
